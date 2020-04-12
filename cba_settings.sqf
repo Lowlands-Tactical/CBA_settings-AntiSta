@@ -102,27 +102,6 @@ force force ace_interaction_disableNegativeRating = false;
 force force ace_interaction_enableMagazinePassing = true;
 force force ace_interaction_enableTeamManagement = true;
 
-// ACE Interaction Menu
-ace_gestures_showOnInteractionMenu = 2;
-ace_interact_menu_actionOnKeyRelease = true;
-ace_interact_menu_addBuildingActions = false;
-ace_interact_menu_alwaysUseCursorInteraction = true;
-ace_interact_menu_alwaysUseCursorSelfInteraction = true;
-ace_interact_menu_colorShadowMax = [0,0,0,1];
-ace_interact_menu_colorShadowMin = [0,0,0,0.25];
-ace_interact_menu_colorTextMax = [1,1,1,1];
-ace_interact_menu_colorTextMin = [1,1,1,0.25];
-ace_interact_menu_cursorKeepCentered = false;
-ace_interact_menu_cursorKeepCenteredSelfInteraction = false;
-ace_interact_menu_menuAnimationSpeed = 0;
-ace_interact_menu_menuBackground = 0;
-ace_interact_menu_menuBackgroundSelf = 0;
-ace_interact_menu_selectorColor = [1,0,0];
-ace_interact_menu_shadowSetting = 2;
-ace_interact_menu_textSize = 2;
-ace_interact_menu_useListMenu = false;
-ace_interact_menu_useListMenuSelf = false;
-
 // ACE Logistics
 force force ace_cargo_enable = true;
 force ace_cargo_loadTimeCoefficient = 5;
@@ -185,14 +164,14 @@ force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
 force ace_medical_fatalDamageSource = 2;
 ace_medical_feedback_painEffectType = 2;
-force ace_medical_fractures = 0;
+force ace_medical_fractures = 1;
 ace_medical_gui_enableActions = 0;
 ace_medical_gui_enableMedicalMenu = 1;
 ace_medical_gui_enableSelfActions = true;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
 force ace_medical_ivFlowRate = 5;
-force ace_medical_limping = 0;
+force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
 force ace_medical_playerDamageThreshold = 1;
 force ace_medical_spontaneousWakeUpChance = 0.5;
@@ -201,11 +180,11 @@ force ace_medical_statemachine_AIUnconsciousness = false;
 force ace_medical_statemachine_cardiacArrestTime = 300;
 force ace_medical_statemachine_fatalInjuriesAI = 2;
 force ace_medical_statemachine_fatalInjuriesPlayer = 1;
-force ace_medical_treatment_advancedBandages = false;
-force ace_medical_treatment_advancedDiagnose = false;
+force ace_medical_treatment_advancedBandages = true;
+force ace_medical_treatment_advancedDiagnose = true;
 force ace_medical_treatment_advancedMedication = false;
 force ace_medical_treatment_allowLitterCreation = true;
-force ace_medical_treatment_allowSelfIV = 1;
+force ace_medical_treatment_allowSelfIV = 0;
 force ace_medical_treatment_allowSelfStitch = 0;
 force ace_medical_treatment_allowSharedEquipment = 0;
 force ace_medical_treatment_clearTraumaAfterBandage = true;
@@ -216,12 +195,12 @@ force ace_medical_treatment_cprSuccessChance = 0.5;
 force ace_medical_treatment_holsterRequired = 2;
 force ace_medical_treatment_litterCleanupDelay = 600;
 force ace_medical_treatment_locationEpinephrine = 0;
-force ace_medical_treatment_locationPAK = 0;
+force ace_medical_treatment_locationPAK = 3;
 force ace_medical_treatment_locationsBoostTraining = false;
 force ace_medical_treatment_locationSurgicalKit = 2;
 force ace_medical_treatment_maxLitterObjects = 500;
-force ace_medical_treatment_medicEpinephrine = 0;
-force ace_medical_treatment_medicPAK = 0;
+force ace_medical_treatment_medicEpinephrine = 1;
+force ace_medical_treatment_medicPAK = 1;
 force ace_medical_treatment_medicSurgicalKit = 1;
 force ace_medical_treatment_timeCoefficientPAK = 1;
 force ace_medical_treatment_woundReopening = false;
@@ -414,8 +393,6 @@ cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
-
-
 
 // ACRE2
 force acre_sys_core_fullDuplex = false;
