@@ -74,8 +74,8 @@ force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
 force ace_explosives_explodeOnDefuse = false;
-force force ace_explosives_punishNonSpecialists = true;
-force ace_explosives_requireSpecialist = true;
+force force ace_explosives_punishNonSpecialists = false;
+force ace_explosives_requireSpecialist = false;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
@@ -159,39 +159,39 @@ ace_maptools_rotateModifierKey = 1;
 force ace_medical_ai_enabledFor = 0;
 force ace_medical_AIDamageThreshold = 1;
 force ace_medical_bleedingCoefficient = 1;
-force ace_medical_blood_bloodLifetime = 900;
+force ace_medical_blood_bloodLifetime = 300;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
 force ace_medical_fatalDamageSource = 2;
 ace_medical_feedback_painEffectType = 2;
-force ace_medical_fractures = 1;
+force ace_medical_fractures = 0;
 ace_medical_gui_enableActions = 0;
 ace_medical_gui_enableMedicalMenu = 1;
 ace_medical_gui_enableSelfActions = true;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
-force ace_medical_ivFlowRate = 5;
+force ace_medical_ivFlowRate = 15;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
-force ace_medical_playerDamageThreshold = 1;
+force ace_medical_playerDamageThreshold = 7.5;
 force ace_medical_spontaneousWakeUpChance = 0.5;
-force ace_medical_spontaneousWakeUpEpinephrineBoost = 10;
+force ace_medical_spontaneousWakeUpEpinephrineBoost = 25.2478;
 force ace_medical_statemachine_AIUnconsciousness = false;
 force ace_medical_statemachine_cardiacArrestTime = 300;
 force ace_medical_statemachine_fatalInjuriesAI = 2;
 force ace_medical_statemachine_fatalInjuriesPlayer = 1;
-force ace_medical_treatment_advancedBandages = true;
+force ace_medical_treatment_advancedBandages = false;
 force ace_medical_treatment_advancedDiagnose = true;
 force ace_medical_treatment_advancedMedication = false;
 force ace_medical_treatment_allowLitterCreation = true;
-force ace_medical_treatment_allowSelfIV = 0;
+force ace_medical_treatment_allowSelfIV = 1;
 force ace_medical_treatment_allowSelfStitch = 0;
 force ace_medical_treatment_allowSharedEquipment = 0;
 force ace_medical_treatment_clearTraumaAfterBandage = true;
 force ace_medical_treatment_consumePAK = 0;
 force ace_medical_treatment_consumeSurgicalKit = 0;
 force ace_medical_treatment_convertItems = 0;
-force ace_medical_treatment_cprSuccessChance = 0.5;
+force ace_medical_treatment_cprSuccessChance = 0.75;
 force ace_medical_treatment_holsterRequired = 2;
 force ace_medical_treatment_litterCleanupDelay = 600;
 force ace_medical_treatment_locationEpinephrine = 0;
@@ -199,8 +199,8 @@ force ace_medical_treatment_locationPAK = 3;
 force ace_medical_treatment_locationsBoostTraining = false;
 force ace_medical_treatment_locationSurgicalKit = 2;
 force ace_medical_treatment_maxLitterObjects = 500;
-force ace_medical_treatment_medicEpinephrine = 1;
-force ace_medical_treatment_medicPAK = 1;
+force ace_medical_treatment_medicEpinephrine = 0;
+force ace_medical_treatment_medicPAK = 0;
 force ace_medical_treatment_medicSurgicalKit = 1;
 force ace_medical_treatment_timeCoefficientPAK = 1;
 force ace_medical_treatment_woundReopening = false;
@@ -349,41 +349,6 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
 force ace_zeus_zeusBird = false;
 
-// ACRE2
-force force acre_sys_core_automaticAntennaDirection = false;
-force force acre_sys_core_defaultRadioVolume = 0.8;
-force force acre_sys_core_fullDuplex = false;
-force force acre_sys_core_ignoreAntennaDirection = false;
-force force acre_sys_core_interference = true;
-force force acre_sys_core_postmixGlobalVolume = 1.84893;
-force force acre_sys_core_premixGlobalVolume = 1.78877;
-force force acre_sys_core_revealToAI = 1;
-force force acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_core_ts3ChannelName = "ACRE";
-force force acre_sys_core_ts3ChannelPassword = "";
-force force acre_sys_core_ts3ChannelSwitch = true;
-force force acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 2;
-
-// ACRE2 UI
-acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
-acre_sys_list_CycleRadiosColor = [0.66,0.05,1,1];
-acre_sys_list_DefaultPTTColor = [1,0.8,0,1];
-acre_sys_list_HintBackgroundColor = [0,0.0533022,0.0419617,0.614679];
-acre_sys_list_HintTextFont = "LCD14";
-acre_sys_list_LanguageColor = [1,0.29,0.16,1];
-acre_sys_list_PTT1Color = [0,1,0,1];
-acre_sys_list_PTT2Color = [0,0,1,1];
-acre_sys_list_PTT3Color = [1,0.8,0,1];
-acre_sys_list_SwitchChannelColor = [0.66,0.05,1,1];
-acre_sys_list_ToggleHeadsetColor = [0.66,0.05,1,1];
-
-// ACRE2 Zeus
-acre_sys_zeus_zeusCanSpectate = true;
-acre_sys_zeus_zeusCommunicateViaCamera = true;
-acre_sys_zeus_zeusDefaultVoiceSource = false;
-
 // CBA UI
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
@@ -393,13 +358,3 @@ cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
-
-// ACRE2
-force acre_sys_core_fullDuplex = false;
-force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = true;
-force force acre_sys_core_revealToAI = true;
-force force acre_sys_core_terrainLoss = 0;
-force force acre_sys_core_ts3ChannelSwitch = true;
-force force acre_sys_core_unmuteClients = true;
-
